@@ -1,0 +1,90 @@
+/* General container styling */
+.quiz-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    color: #333;
+}
+
+/* Title styling */
+.quiz-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 35px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Form styling */
+.quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Label styling */
+.quiz-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+    font-size: 17px;
+}
+
+/* Select dropdown styling */
+.quiz-select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #c0c0c0;
+    font-size: 16px;
+    background-color: #fefefe;
+    -webkit-appearance: none; /* For WebKit browsers (Chrome, Safari) */
+    -moz-appearance: none;    /* For Mozilla browsers (Firefox) */
+    appearance: none;         /* Standard property */
+    /* Optional: Add a custom arrow for the select dropdown */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2C117.7l-13.9-13.9-121.2%2C121.2L20%2C103.8%2C6.1%2C117.7%2C145.9%2C257.5z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Adjust position as needed */
+    background-size: 12px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
+/* Focus state for select dropdowns */
+.quiz-select:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Subtle glow */
+}
+
+
+/* Button styling */
+.quiz-button {
+    padding: 15px 25px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+    width: auto; /* Ensures button width is based on content */
+}
+
+/* Button hover effect */
+.quiz-button:hover {
+    background-color: #0056b3;
+}
+
+/* Button active (click) effect */
+.quiz-button:active {
+    transform: scale(0.98);
+}

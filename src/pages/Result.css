@@ -1,0 +1,104 @@
+/* General container styling for the result page */
+.result-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* White background */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Soft shadow */
+    color: #333; /* Dark gray text */
+    text-align: center; /* Center content within the container */
+}
+
+/* Title styling */
+.result-title {
+    color: #2c3e50; /* Darker header color */
+    margin-bottom: 35px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Paragraph styling for style, occasion, and outfit */
+.result-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Strong text within paragraphs */
+.result-text strong {
+    color: #2c3e50; /* Make strong text stand out */
+}
+
+/* Specific styling for the outfit suggestion paragraph/card */
+.outfit-suggestion-box {
+    background-color: #e0f7fa; /* Light blue background for the suggestion */
+    border: 1px solid #b2ebf2; /* Matching border */
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Subtle shadow for the box */
+    text-align: left; /* Align text within the box to the left */
+}
+
+.outfit-suggestion-box h3 {
+    color: #007bff; /* Accent color for the suggestion heading */
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: flex; /* To align icon and text */
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+/* Style for the "Missing data" message */
+.missing-data-message {
+    color: #e74c3c; /* Red color for error message */
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Button to go back to quiz */
+.back-button {
+    padding: 12px 20px;
+    background: #6c757d; /* Muted gray for back button */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+/* Image styling additions/modifications */
+.outfit-image-wrapper {
+    margin-bottom: 20px; /* Space between image and description */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.outfit-image {
+    /* Original values:
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    */
+
+    /* Adjust these values to reduce image size */
+    max-width: 80%;   /* Reduced from 100% to make it smaller within its container */
+    max-height: 250px; /* Reduced from 300px for a smaller height */
+    width: auto;      /* Allow width to adjust based on max-height */
+    height: auto;     /* Maintain aspect ratio */
+
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow for the image */
+    object-fit: cover; /* Use 'cover' to fill the space, or 'contain' to show full image without cropping */
+}
